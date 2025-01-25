@@ -1,32 +1,14 @@
 package com.ipaye.smarthomeautomationsystem.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-@Entity
-public class Device {
-
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+public class DeviceRequest {
 
     private String name;
+
     private String type;
+
     private String status;
+
     private String location;
-
-
-    // arrange
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-
-        this.id=id;
-    }
 
     public String getName() {
         return name;
