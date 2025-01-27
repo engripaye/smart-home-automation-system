@@ -78,6 +78,8 @@ public class DeviceControllerTest {
         verify(deviceService, times(1)).deleteDeviceById(1L);
     }
 
+      // CASE 4
+
     @Test
     void deleteDeviceInvalidId(){
 
